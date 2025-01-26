@@ -1,0 +1,145 @@
+/* Geral */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Imagens */
+img {
+  width: 100px;
+  height: auto;
+}
+
+#foto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 100px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Botões */
+.button1,
+.button2,
+.button3 {
+  height: 30px;
+  width: 150px;
+  border-radius: 4px;
+  background-color: #000000f9;
+  border: none;
+  color: #ffffff;
+  margin: 30px;
+  cursor: pointer;
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover {
+  background-color: #444444;
+}
+
+/* Conteúdo Principal */
+#container {
+  margin-top: 100px;
+}
+
+.texto {
+  margin-top: 100px;
+  text-align: center;
+}
+
+/* Imagens Responsivas */
+.img2 {
+  width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.img1 {
+  display: block;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+/* Tipografia */
+.h3 {
+  font-style: italic;
+  color: #333333;
+}
+
+.h6 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color: #555555;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #00BFFF;
+}
+
+/* Colunas */
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.colona1,
+.colona2,
+.colona3,
+.colona4 {
+  flex: 1 1 25%;
+  padding: 15px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #00BFFF;
+  text-align: center;
+}
+
+/* Rodapé */
+.rodape {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  color: #555555;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rodape a {
+  text-decoration: none;
+  color: #00BFFF;
+  margin: 0 10px;
+}
+
+.rodape a:hover {
+  text-decoration: underline;
+}
+
+.paragrafo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #55555569;
+}
+
+.ti {
+  color: #55555569;
+  font-size: 16px;
+}

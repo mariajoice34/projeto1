@@ -1,0 +1,81 @@
+*  {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* garantir que padding não extrapole o tamanho dos elementos */
+}
+
+body {
+    background-image: url('fotos1.jpg');
+    background-size: cover; /* Ajusta a imagem para cobrir o fundo*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh; /* Garante que o fundo ocupe toda a altura da janela */
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    color: #fff;
+
+    
+}
+
+#container {
+    display: flex;
+    flex-direction: column; /*alinha o conteudo em coluna*/
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 90%; /* ajustavel para qualquer tamanho de tela*/
+    max-width: 800px; /*limiti maximo de largura*/
+    text-align: center;
+    background: rgba(0,0,0,0.6); /*cor de fundo */
+    border-radius: 15px; /* bordas arredondadas*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /*sombra sutil*/
+    
+    
+}
+
+.texto {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: justify;
+    color: white;
+
+}
+
+.cor{
+    font-size: 1.8rem; /*tamanho do titulo*/
+    margin-bottom: 10px;
+}
+
+.circular-button {
+    border-radius: 20px; /*bordas*/
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 1rem; /*tamanho do texto ajustado*/
+    padding: 10px 20px;/* espaçamento interno*/
+    width: auto; /*adapta á largura do texto*/
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efeitos ao passar o mouse */
+}
+
+.circular-button:hover {
+    background-color: #d63e14;
+    transform: scale(1.1);
+
+}
+a{
+    color: bisque;
+    text-decoration: none;/* remove o sublinhado*/
+    font-weight: bold;
+}
+
+a:hover {
+    color: white; /* Cor no hover */
+    text-decoration: underline; /* Sublinhado no hover */
+}
