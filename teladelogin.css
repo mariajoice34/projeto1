@@ -1,110 +1,169 @@
-*{
+@charset "UTF-8";
+
+/* Geral */
+body {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    
+  }
+
+  body, html {
+    background-image: linear-gradient(#FAF9F4, #484848);
+  }
+
+  #foto{
+   display: flex;
+   justify-content:space-between;
+   width: 100%;
+   position: fixed;
+   background-color: #ffffff;
+   top:0;
+   z-index: 1;
+  
+  }
+
+  img {
+    width: 100px;
+    height: auto;
+  }
+
+  /* Botões */
+.button1,
+.button2,
+.button3 {
+  height: 30px;
+  width: 150px;
+  border-radius: 4px;
+  background-color: #000000f9;
+  border: none;
+  color: #ffffff;
+  margin: 30px;
+  cursor: pointer;
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover {
+  background-color: #444444;
+}
+
+/*Reset basico*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*container principal*/
+
+.login-container{
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
 
 }
-.hero
-{
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(capa.jpg);
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-}
-.form-box{
-    width: 380px;
-    height: 480px;
-    position: relative;
-    margin: 6% auto;
-    background: #fffffff3;
-    padding: 5px;
-    overflow: hidden;
+
+/*cartao de login*/
+.login-card{
+    background-color: #f3f4f6;
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;}
+
+
+/*Titulo */
+.login-card h2{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
-.button-box{
-    width: 220px;
-    margin: 35px auto;
-    position: relative;
-    box-shadow:  0 0 20px 9px #5324ff13;
-    border-radius: 30px;
-}
-.toggle-btn{
-        width: 150px;
-        padding: 8px 20px;
-        cursor: pointer;
-        background: transparent;
-        border: 0;
-        outline: none;
-        position: relative;
-        margin: 0 auto;
-        display: block;
-}
-#btn{
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient( to right, #fff,#06deff );
-    border-radius: 30px;
-    transition: .3s;
-}
-.social-icons{
-    margin: 30px auto;
-    text-align: center;
-}
-.social-icons img{
-   width: 30px;
-   margin: 0 12px;
-   box-shadow: 0 0 20px 0 #7f7f7f3d;
-   cursor: pointer;
-   border-radius: 50%;
-}
+
+/*Grupos de entrada */
 .input-group{
-    top: 180px;
-    position: absolute;
-    width: 280px;
-    transition: .5s;
-
+    margin-bottom: 15px;
+    text-align: left;
+   
 }
-.input-field{
-    width: 100%;
-    padding: 10px 0;
-    margin: 5px 0;
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    border-bottom: 1px solid #999;
-    outline: none;
-    background: transparent;
 
-}
-.submit-btn{
-    width: 85%;
-    padding: 10px 30px;
-    cursor: pointer;
+.input-group label{
     display: block;
-    margin: auto;
-    background: linear-gradient( to right, #fff,#06fff7 );
-    border: 0;
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 5px;
+    
+}
+
+.input-group input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333333;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333333;
     outline: none;
-    border-radius: 30px;
+    transition: border-color 0.3s ease;
 }
-.check-box{
-    margin: 30px  10px 30px 0;
 
-
+.input-group input:focus {
+    border-color: #007bff;
 }
-.span{
-color: #777;
-font-size: 12px ;
-bottom: 68px;
-position: absolute;
 
+/*botao de login*/
+.botton{
+    height: 30px;
+    width: 150px;
+    border-radius: 4px;
+    background-color: #000000f9;
+    border: none;
+    color: #ffffff;
+    margin: 10px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-#login{
-    left: 50px;
 
+.signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555555;
+}
+
+.signup-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-text a:hover{
+    text-decoration: underline;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.txt{
+    text-decoration: none;
+    color: #007bff;
+}
+
+label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

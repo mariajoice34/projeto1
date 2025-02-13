@@ -3,6 +3,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  
 }
 
 /* Imagens */
@@ -15,11 +16,11 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: #14020200;
   height: 100px;
   width: 100%;
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(19, 59, 146, 0.966);
 }
 
 /* Botões */
@@ -93,6 +94,14 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  
+}
+
+.titulo1 a,
+.titulo2 a,
+.titulo3 a,
+.titulo4 a {
+  color: black;
 }
 
 .colona1,
@@ -143,3 +152,4 @@ img {
   color: #55555569;
   font-size: 16px;
 }
+

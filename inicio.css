@@ -31,7 +31,7 @@ body {
     text-align: center;
     background: rgba(0,0,0,0.6); /*cor de fundo */
     border-radius: 15px; /* bordas arredondadas*/
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /*sombra sutil*/
+    box-shadow: 0 4px 8px rgb(0, 0, 0); /*sombra sutil*/
     
     
 }
